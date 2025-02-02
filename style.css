@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    background-color: rgb(234, 249, 255);
+    padding: 40px; /* Mengurangi padding untuk ukuran lebih kecil */
+    width: 50%; /* Mengurangi lebar container */
+    border-radius: 20px; /* Mengubah border-radius menjadi kotak */
+    transition: all 0.2s ease-out;
+}
+
+.container:hover {
+    box-shadow: 13px 15px 20px rgba(0, 0, 0, 0.433);
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.row {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.span {
+    display: flex;
+    border: none;
+    padding: 5px 40px;
+}
+
+input {
+    margin: 20px;
+    margin-top: 15px;
+    padding: 10px 50px; /* Mengurangi padding input */
+    border: 2px solid rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+    border-radius: 10px; /* Menjaga border-radius sedikit melengkung */
+    transition: all 0.3s ease-out;
+}
+
+input::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+input:hover:focus {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.618);
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.211);
+    background-color: rgb(105, 174, 234);
+    border-radius: 20px;
+}
+
+input:focus {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.618);
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: rgb(105, 174, 234);
+}
+
+body:not(:has(input:focus)) input {
+    transform: scale(1);
+}
+
+button {
+    width: 140px; /* Mengurangi lebar button */
+    padding: 10px;
+    margin: 35px;
+    background-color: rgb(105, 174, 234);
+    border: none;
+    border-radius: 20px;
+    transition: all 0.1s ease-out;
+}
+
+button:hover:active {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgb(36, 134, 220);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.246);
+    transform: scale(1.1);
+}
+
+span {
+    padding: 10px;
+    margin-top: 1px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.n,
+.n1 {
+    text-align: center;
+    margin: 35px;
+    margin-top: -10px;
+    background-color: rgb(204, 220, 235);
+}
+
+.n1 {
+    background-color: rgb(105, 174, 234);
+}
